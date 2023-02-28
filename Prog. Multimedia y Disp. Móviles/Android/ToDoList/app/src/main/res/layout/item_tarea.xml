@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:text="TextView"
+        android:textColor="@color/darkBlue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonHechoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/darkBlue"
+        android:drawableRight="@drawable/check"
+
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:onClick="borrarTarea"
+        android:text="@string/done"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Si quisieramos poner el icono a la izquierda: app:icon="@drawable/check"-->
+
+    <Button
+        android:id="@+id/botonEditTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:drawableRight="@drawable/editar"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/louisgeorgecafe"
+        android:onClick="editTarea"
+        android:text="EDIT"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/botonHechoItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
